@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <background-image src="./assets/images/il_1140xN.3512731393_1cgw.png"></background-image>
+  <h1 class="title">Pesquisa: Qual baixo é o mais bonito?</h1>
+  <p class="description">Por favor, preencham a lista com os dados solicitados</p>
+  <form id="survey-form">
+
+    <fieldset>
+      <div class="column">
+        <label for="name">Nome Completo: </label>
+        <input required id="name" type="text" placeholder="Seu Nome Completo..." size="50px"></input>
+        <label for="email">E-mail: </label>
+        <input required id="email" type="email" placeholder="Seu E-mail..."></input>
+        <label for="number">Idade: </label>
+        <input required id="number" type="number" min="13" max="120" placeholder="00"></input>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="column">
+        <label class="dropdown">Qual seu estilo de música favorito?</label>
+        <select id="dropdown" style="width: 390px;">
+          <option>(Escolha Um)</option>
+          <option>Rock</option>
+          <option>Reggae</option>
+          <option>Jazz</option>
+          <option>Metal</option>
+          <option>Blues</option>
+          <option>Funk</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="radio">
+        <label id="radio">Qual seu baixo favorito?</label>
+        <label for="jazz"><input type="radio" name="group1" value="jazz" />    Fender Jazz Bass</label>
+        <label for="precision"><input type="radio" name="group1" value="precision" />    Fender Precision</label>
+        <label for="hofner"><input type="radio" name="group1" value="hofner" />    Hofner Model 500/1</label>
+        <label for="rick"><input type="radio" name="group1" value="rick" />    Rickenbacker 4003</label>
+        <label for="thunder"><input type="radio" name="group1" value="thunder" />    Gibson Thunderbird</label>
+        <label for="stinggray"><input type="radio" name="group1" value="stingray" />    Music Man Stingray</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="column">
+        <label id="checkbox" value="captação"> Qual sua captação favorita?</label>
+        <label for="precision"><input type="checkbox" value="precision">  Precision</label>
+        <label for="jazz"><input type="checkbox" value="jazz">  Jazz</label>
+        <label for="pj"><input type="checkbox" value="pj">  PJ</label>
+        <label for="humbucker"><input type="checkbox" value="humbucker">  Humbucker</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <textarea id="conte-mais" rows="4" cols="53"> Detalhe a sua opnião... (opcional)</textarea>
+    </fieldset>
+    <input id="submit" type="submit"></input>
+  </form>
+</body>
+
+</html>

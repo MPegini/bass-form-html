@@ -1,0 +1,82 @@
+h1, p {
+    margin: 20px auto;
+    text-align: center;
+    color: #d6ffc9
+  }
+  .title {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  body {
+    background-color: #092500;
+    width: 80%;
+    height: 100vh;
+    color: #D2EBCA;
+    margin: auto;
+    background-image: url(./assets/images/bass-guitar-sb63v5v4aifhw612.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  input:not([type=radio])
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #D2EBCA;
+    border-color: white;
+    min-width: 70px;
+  }
+  label {
+    margin: 0.5rem 0;
+    display: block;
+  }
+  fieldset{
+    background-color: rgb(36, 82, 36);
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+  }
+  .radio {
+    display: flex;
+    flex-direction: column;
+  }
+  .radio label {
+    display: flex;
+  }
+  .radio input {
+    margin-top: 0;
+  }
+ .column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ }
+ .description {
+  font-weight: bolder;
+  font-size: 20px;
+ }
